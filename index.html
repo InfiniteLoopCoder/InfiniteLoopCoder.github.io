@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaofeng Su - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c; /* Equivalent to Tailwind's gray-900 */
+        }
+        .section-title {
+            /* Default section title styling */
+            @apply text-2xl font-bold text-blue-700 border-b-2 border-blue-200 pb-2 mb-6;
+        }
+        .item-title {
+            @apply text-lg font-semibold text-gray-800;
+        }
+        .item-subtitle {
+            @apply text-sm text-gray-600;
+        }
+        .date-text {
+            @apply text-sm text-gray-500 font-medium text-right;
+        }
+        .icon { /* This class is for contact icons */
+            width: 1.25em;
+            height: 1.25em;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 0.5em;
+            fill: currentColor;
+        }
+        /* Custom styles for print (optional) */
+        @media print {
+            body {
+                font-size: 10pt;
+            }
+            .section-title {
+                @apply text-xl font-bold; /* Smaller for print, kept bold */
+            }
+            .no-print {
+                display: none;
+            }
+            .container {
+                box-shadow: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 py-8 md:py-12">
+    <div class="container mx-auto max-w-4xl bg-white p-8 md:p-12 shadow-xl rounded-lg">
+
+        <header class="mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-700 text-center md:text-left">Yaofeng Su</h1>
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-gray-700">
+                <div class="flex items-center">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Male / Born 2005.1</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 2.682l7.997 3.202A2 2 0 0119 7.768V16a2 2 0 01-2 2H3a2 2 0 01-2-2V7.768a2 2 0 011.003-1.884zM14.5 8.25L10 6.484 5.5 8.25V15h9V8.25z" />
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <span>WeChat: InfiniteLoopCoder</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 2.682l7.997 3.202A2 2 0 0119 7.768V16a2 2 0 01-2 2H3a2 2 0 01-2-2V7.768a2 2 0 011.003-1.884zM18 8.711l-8-3.2-8 3.2V16h16V8.711z" />
+                        <path d="M10 11.5a.5.5 0 01.5.5v1.5a.5.5 0 01-1 0V12a.5.5 0 01.5-.5zM10 10a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1V11a1 1 0 00-1-1H10z" />
+                    </svg>
+                    <span>yfsu23@m.fudan.edu.cn / yaofeng@unc.edu</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    <span>+86 17753799127</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="mb-10">
+            <h2 class="section-title font-extrabold">
+                Education Background
+            </h2>
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between items-start">
+                        <h3 class="item-title">Fudan University - Computer Science - Undergraduate</h3>
+                        <span class="date-text">2023.09 - 2027.06 (Expected)</span>
+                    </div>
+                    <p class="mt-1 text-gray-700">
+                        GPA: <strong>3.83/4.00</strong> (High academic standing within major).
+                        Recipient of <strong>Fudan University Outstanding Student Award</strong> (with scholarship).
+                        Achieved 4th place in ASIC National Key Laboratory Hackathon.
+                        Recognized with numerous other significant awards and scholarships.
+                    </p>
+                    <p class="mt-1 text-gray-700">
+                        Intern at MagicLab, School of Engineering and Applied Technology, leading an autonomous driving risk assessment research project under the guidance of Professor Wenchao Ding.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex justify-between items-start">
+                        <h3 class="item-title">University of North Carolina at Chapel Hill - Exchange Student</h3>
+                        <span class="date-text">2025.08 - 2025.12 (Anticipated)</span>
+                    </div>
+                    <p class="mt-1 text-gray-700">
+                        Scheduled to conduct research on <strong>vision-language-action models</strong> under Professor Huaxiu Yao, focusing on Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) approaches. Co-authored a paper submitted to a top-tier AI conference.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="section-title font-extrabold">
+                Key Awards & Honors
+            </h2>
+            <ul class="space-y-2">
+                <li class="flex justify-between"><span>Fudan Outstanding Student (Top 9/120)</span> <span class="date-text">2024.10</span></li>
+                <li class="flex justify-between"><span>Fudan Undergraduate Outstanding Student Scholarship (Ranked 11th/120)</span> <span class="date-text">2024.09</span></li>
+                <li class="flex justify-between"><span>Fudan Hehechang Freshman Scholarship (Top 50/700 in EECS)</span> <span class="date-text">2023.10</span></li>
+                <li class="flex justify-between"><span>Fudan ASIC National Key Laboratory Hackathon Second Prize (Ranked 4th/220)</span> <span class="date-text">2024.07</span></li>
+                <li class="flex justify-between"><span>Fudan ASIC National Key Laboratory LLM4EDA Summer School Outstanding Student</span> <span class="date-text">2024.07</span></li>
+                <li class="flex justify-between"><span>Fudan & Tongji First CTF Competition First Prize (Top 3 Fudan Individuals)</span> <span class="date-text">2024.04</span></li>
+            </ul>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="section-title font-extrabold">
+                Work Experience
+            </h2>
+            <div>
+                <div class="flex justify-between items-start">
+                    <h3 class="item-title">Zeekr Intelligence - Intern, PNC-AI Group</h3>
+                    <span class="date-text">Jan 2025 - Feb 2025</span>
+                </div>
+                <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1 pl-4">
+                    <li>Focused on generating initial states for real-world traffic scenarios.</li>
+                    <li>Developed a model to assess the completeness and realism of generated scenes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="section-title font-extrabold">
+                Research Experience
+            </h2>
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between items-start">
+                        <h3 class="item-title">Vision-Language-Action Model RL based on Video Understanding</h3>
+                        <span class="date-text">Jan 2025 - May 2025</span>
+                    </div>
+                    <p class="item-subtitle">Status: Submitted to a top-tier AI conference (details pending double-blind review).</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1 pl-4">
+                        <li>Trained Vision-Language-Action (VLA) models using novel Reinforcement Learning (RL) methodologies.</li>
+                        <li>Designed and executed experiments, including modifying tasks within simulated environments to evaluate model capabilities.</li>
+                        <li>Managed dataset collection, processing, and evaluation for VLA model training and validation.</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex justify-between items-start">
+                        <h3 class="item-title">Autonomous Driving Risk Assessment</h3>
+                        <span class="date-text">Oct 2024 - May 2025</span>
+                    </div>
+                    <p class="item-subtitle">Status: Draft phase; focused on gaining research experience and training.</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1 pl-4">
+                        <li>Engineered risk field representations using advanced spatiotemporal modeling techniques.</li>
+                        <li>Developed and implemented realistic traffic scene generation leveraging diffusion models combined with gradient optimization.</li>
+                        <li>Designed and actualized a lightweight neural network for efficient risk prediction.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title font-extrabold">
+                Technical Skills
+            </h2>
+            <ul class="space-y-3 text-gray-700">
+                <li>
+                    <strong class="font-semibold text-gray-800">Deep Learning Frameworks:</strong> Strong understanding of neural network fundamentals. Proficient in building, training, and optimizing models using PyTorch.
+                </li>
+                <li>
+                    <strong class="font-semibold text-gray-800">Object-Oriented Programming:</strong> Proficient in OOP principles and application using C++ and Python.
+                </li>
+                <li>
+                    <strong class="font-semibold text-gray-800">Modern Toolchain & Parallel Computing:</strong> Solid grasp of computer systems fundamentals and software/hardware architecture interplay. Proficient with CMake, Git, and Linux environments. Experienced in CUDA and parallel computing techniques.
+                </li>
+                <li>
+                    <strong class="font-semibold text-gray-800">English Proficiency:</strong> Excellent (TOEFL: 105, CET-6: 639). Skilled in researching, comprehending, and synthesizing information from English academic literature and technical documentation.
+                </li>
+            </ul>
+        </section>
+
+        <footer class="mt-12 pt-6 border-t border-gray-300 text-center text-sm text-gray-500 no-print">
+            <p>Generated on <span id="currentDate"></span>. Yaofeng Su.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Script to set the current date in the footer
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric', month: 'long', day: 'numeric'
+        });
+    </script>
+
+</body>
+</html>
